@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_2" data-name="Layer 2" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 111.76 936.02">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: url(#linear-gradient);
+      }
+    </style>
+    <linearGradient id="linear-gradient" x1="19.95" y1="843.24" x2="68.98" y2="14.95" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#d6d8ca"/>
+      <stop offset=".08" stop-color="#d8c4a1"/>
+      <stop offset=".17" stop-color="#dbb37c"/>
+      <stop offset=".26" stop-color="#dda55f"/>
+      <stop offset=".35" stop-color="#de9b4b"/>
+      <stop offset=".44" stop-color="#df953f"/>
+      <stop offset=".52" stop-color="#e0943b"/>
+      <stop offset=".61" stop-color="#df953e"/>
+      <stop offset=".69" stop-color="#df9a48"/>
+      <stop offset=".77" stop-color="#dda25a"/>
+      <stop offset=".84" stop-color="#dcae73"/>
+      <stop offset=".91" stop-color="#d9bd92"/>
+      <stop offset=".97" stop-color="#d7d0b9"/>
+      <stop offset="1" stop-color="#d6d8ca"/>
+    </linearGradient>
+  </defs>
+  <g id="big_thunder" data-name="big thunder">
+    <path class="cls-1" d="M111.76,0l-37.25,250.57c-1.65,31.36,24.67,2.49,30.46,18.8l-43.88,227.23c-3.52,33.07,30.61-5.26,26.94,27.9L5.18,936.02l21.98-340.38c-6.48-5.86-28.24,14.37-26.99-13.88,3.05-69.08,27.52-178.17,33.77-250.78-4.79-9.81-35.61,17.4-33.87-14.23L45.78,0h65.98Z"/>
+  </g>
+</svg>

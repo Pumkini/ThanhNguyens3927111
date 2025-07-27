@@ -1,0 +1,1759 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Josefin Slab", serif;
+  font-size: 4.8rem;
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  background: #e5e5e0;
+}
+
+/* ================== Common ===================*/
+.container {
+  max-width: 1993px;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.inherdream {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+}
+.container-hero {
+  display: flex;
+  align-items: center;
+  justify-items: center;
+}
+.inherdream__background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
+  z-index: 0;
+}
+
+.inherdream__port {
+  position: absolute;
+  top: 0;
+  right: -25px;
+  height: 100vh;
+  object-fit: contain;
+  z-index: 1;
+}
+
+.inherdream__window {
+  position: absolute;
+  top: 15vh;
+  left: 70vw;
+  width: 28vw;
+  object-fit: contain;
+  z-index: 2;
+}
+
+.inherdream__bed {
+  position: absolute;
+  bottom: 0vh;
+  left: 60.5vw;
+  object-fit: contain;
+  z-index: 11;
+}
+
+.inherdream__blanket {
+  position: absolute;
+  bottom: 6vh;
+  left: 74.5vw;
+  width: 30vw;
+  height: 30vh;
+  object-fit: contain;
+  z-index: 11;
+  animation: breathing 1s ease-in-out infinite;
+}
+.hero--text {
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+  gap: 20px;
+}
+.inherdream__title {
+  width: 852px;
+  font-family: "Knewave", cursive;
+  font-size: 12.8rem;
+  font-weight: 400;
+  color: #000000;
+  position: absolute;
+  top: 30vh;
+  left: 2vw;
+  line-height: 1;
+  z-index: 10;
+}
+
+.inherdream__author {
+  width: 676px;
+  font-weight: 400;
+  color: #000000;
+  position: absolute;
+  left: 6vw;
+  line-height: 1;
+  z-index: 10;
+}
+
+.inherdream__head {
+  position: absolute;
+  width: 16vw;
+  height: auto;
+  left: 71vw;
+  bottom: 13vh;
+  object-fit: contain;
+  z-index: 10;
+  animation: breathing 1s ease-in-out infinite 0.5s;
+}
+
+/* ================== Section 2 ===================*/
+.scene-2 {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.scene-2__content {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.scene-2__background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
+  z-index: 0;
+}
+
+/* ================== Section 2 Animations ===================*/
+@keyframes moonBreathing {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-15px);
+  }
+}
+
+@keyframes windBreathing {
+  0%,
+  100% {
+    transform: translateY(0) scale(1);
+  }
+  50% {
+    transform: translateY(0) scale(1.05);
+  }
+}
+
+.scene-2__moon {
+  position: absolute;
+  top: -14vh;
+  left: -6vw;
+  width: 35vw;
+  height: 35vw;
+  object-fit: contain;
+  z-index: 2;
+  animation: moonBreathing 3s ease-in-out infinite;
+}
+
+.scene-2__wind {
+  position: absolute;
+  top: 18.5vh;
+  left: 17.5vw;
+  height: 90vh;
+  object-fit: contain;
+  z-index: 2;
+  animation: windBreathing 3.5s ease-in-out infinite 0.5s;
+}
+
+.scene-2__text {
+  width: 800px;
+  margin-top: 96px;
+  position: absolute;
+  top: 50%;
+  right: 3vw;
+  text-align: center;
+  z-index: 3;
+}
+
+.scene-2__poem {
+  font-size: 4.8rem;
+  font-weight: 400;
+  color: #000000;
+  margin: 0;
+  margin-bottom: 0.5rem;
+}
+
+.scene-2__poem:last-child {
+  margin-bottom: 0;
+  margin-left: 60px;
+}
+
+/* ================== Section 3 ===================*/
+.scene-3 {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.scene-3__content {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.scene-3__background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
+  z-index: 0;
+}
+
+.scene-3__path {
+  position: absolute;
+  bottom: -103vh;
+  left: 50%;
+  transform: translateX(-50%);
+  height: 78vh;
+  object-fit: contain;
+  z-index: 1;
+}
+/* ================== Section 3 Animations ===================*/
+@keyframes mistLeftMove {
+  0% {
+    transform: translateX(0);
+  }
+  25% {
+    transform: translateX(-250px);
+  }
+  75% {
+    transform: translateX(-250px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+@keyframes mistRightMove {
+  0% {
+    transform: translateX(0);
+  }
+  25% {
+    transform: translateX(250px);
+  }
+  75% {
+    transform: translateX(250px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+@keyframes characterWalkIn {
+  0% {
+    opacity: 0;
+    transform: translateY(100px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(-100px);
+  }
+}
+
+.scene-3__mist1 {
+  position: absolute;
+  top: 14vh;
+  left: 10vw;
+  width: 50vw;
+  height: 70vh;
+  object-fit: contain;
+  z-index: 2;
+  animation: mistLeftMove 5s ease-in-out infinite 1s;
+}
+
+.scene-3__mist2 {
+  position: absolute;
+  top: 42vh;
+  left: 3vw;
+  width: 50vw;
+  height: 70vh;
+  object-fit: contain;
+  z-index: 2;
+  animation: mistLeftMove 5s ease-in-out infinite 1.5s;
+}
+
+.scene-3__mist3 {
+  position: absolute;
+  top: 14vh;
+  right: 5vw;
+  width: 55vw;
+  height: 70vh;
+  object-fit: contain;
+  z-index: 2;
+  animation: mistRightMove 5s ease-in-out infinite 1s;
+}
+
+.scene-3__mist4 {
+  position: absolute;
+  bottom: -104vh;
+  right: 1vw;
+  width: 50vw;
+  height: 70vh;
+  object-fit: contain;
+  z-index: 2;
+  animation: mistRightMove 5s ease-in-out infinite 1.5s;
+}
+
+.scene-3__main {
+  position: absolute;
+  bottom: -92vh;
+  left: 43%;
+  width: 12vw;
+  height: 50vh;
+  object-fit: contain;
+  z-index: 1;
+  animation: characterWalkIn 2.25s ease-in infinite 3s;
+}
+
+.scene-3__text {
+  width: 800px;
+  position: absolute;
+  top: 5vh;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+  z-index: 4;
+}
+
+.scene-3__poem {
+  font-size: 4.8rem;
+  font-weight: 400;
+  color: #000000;
+  margin: 0;
+  margin-bottom: 1rem;
+}
+
+.scene-3__poem:last-child {
+  margin-left: 50px;
+}
+
+/* ================== Section 4 ===================*/
+.scene-4 {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.scene-4__content {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.scene-4__background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
+  z-index: 0;
+}
+
+.scene-4__trees-bg-1 {
+  position: absolute;
+  top: 25vh;
+  left: 11vw;
+  width: 25vw;
+  height: 40vh;
+  object-fit: contain;
+  z-index: 0;
+  animation: treeSway 2s ease-in-out infinite;
+}
+.scene-4__trees-bg-2 {
+  position: absolute;
+  top: 35vh;
+  left: 50%;
+  width: 30vw;
+  height: 40vh;
+  object-fit: contain;
+  z-index: 2;
+  animation: treeSway 2s ease-in-out infinite 0.5s;
+}
+
+.scene-4__trees-bg-3 {
+  position: absolute;
+  top: 28vh;
+  right: 4vw;
+  width: 28vw;
+  height: 42vh;
+  object-fit: contain;
+  z-index: 0;
+  animation: treeSway 2s ease-in-out infinite 1s;
+}
+
+.scene-4__ground {
+  position: absolute;
+  bottom: -107vh;
+  left: 0;
+  width: 100vw;
+  height: 40vh;
+  object-fit: cover;
+  z-index: 1;
+}
+
+.scene-4__tree-4rground-1 {
+  position: absolute;
+  bottom: -71vh;
+  right: 3vw;
+  width: 16vw;
+  height: 70vh;
+  object-fit: contain;
+  z-index: 3;
+  animation: treeSway 2s ease-in-out infinite 1.5s;
+}
+
+.scene-4__tree-4rground-2 {
+  position: absolute;
+  bottom: -88vh;
+  right: 19vw;
+  width: 18vw;
+  height: 75vh;
+  object-fit: contain;
+  z-index: 6;
+  animation: treeSway 2s ease-in-out infinite 2s;
+}
+
+.scene-4__tree-4rground-3 {
+  position: absolute;
+  bottom: -84vh;
+  left: 3vw;
+  width: 16vw;
+  height: 83vh;
+  object-fit: contain;
+  z-index: 3;
+  animation: treeSway 2s ease-in-out infinite 0.8s;
+}
+.scene-4__tree-4rground-4 {
+  position: absolute;
+  bottom: -83vh;
+  left: -2vw;
+  width: 14vw;
+  height: 50vh;
+  object-fit: contain;
+  z-index: 3;
+  animation: treeSway 2s ease-in-out infinite 1.2s;
+}
+
+.scene-4__grass {
+  position: absolute;
+  bottom: -88vh;
+  left: 18vw;
+  width: 62vw;
+  height: 20vh;
+  object-fit: cover;
+  z-index: 4;
+  animation: grassWave 2s ease-in-out infinite;
+}
+
+.scene-4__bush-4g {
+  position: absolute;
+  bottom: -89vh;
+  left: 50%;
+  transform: translateX(-51%);
+  width: 100vw;
+  height: 40vh;
+  object-fit: contain;
+  z-index: 0;
+}
+
+.scene-4__birds {
+  position: absolute;
+  top: 8vh;
+  left: 24%;
+  width: 50vw;
+  height: 35vh;
+  object-fit: contain;
+  z-index: 5;
+  animation: birdFloat 3s ease-in-out infinite;
+}
+.scene-4__tren-cung {
+  position: absolute;
+  top: 62vh;
+  left: -22px;
+  width: 100vw;
+  height: 30vh;
+  object-fit: cover;
+  z-index: 7;
+}
+
+.scene-4__text {
+  margin-top: 350px;
+  position: absolute;
+  left: 49%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  z-index: 8;
+}
+
+.scene-4__poem {
+  font-size: 4.8rem;
+  font-weight: 400;
+  color: #000000;
+  line-height: 1.5;
+  margin: 0;
+}
+
+/* ================== Section 5 ===================*/
+.scene-5 {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.scene-5__content {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.scene-5__background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
+  z-index: 0;
+}
+
+.scene-5__skyline {
+  position: absolute;
+  top: 4vh;
+  left: 0;
+  width: 100vw;
+  height: 60vh;
+  object-fit: cover;
+  z-index: 1;
+}
+.scene-5__wave-1 {
+  position: absolute;
+  bottom: -100vh;
+  right: 0;
+  width: 53vw;
+  height: 63vh;
+  object-fit: cover;
+  z-index: 2;
+  animation: waveFlow 4s ease-in-out infinite 0s;
+}
+.scene-5__wave-2 {
+  position: absolute;
+  bottom: -108vh;
+  left: 0;
+  width: 103vw;
+  height: 60vh;
+  object-fit: cover;
+  z-index: 3;
+  animation: waveFlow 4s ease-in-out infinite 2s;
+}
+
+.scene-5__wave-3 {
+  position: absolute;
+  bottom: -108vh;
+  left: 0;
+  width: 106vw;
+  height: 43vh;
+  object-fit: cover;
+  z-index: 4;
+  animation: waveFlow 4s ease-in-out infinite 4s;
+}
+
+.scene-5__boat {
+  position: absolute;
+  bottom: -79vh;
+  left: 8%;
+  width: 40vw;
+  height: 40vh;
+  object-fit: contain;
+  z-index: 2;
+  animation: boatFloat 2s ease-in-out infinite;
+}
+
+.scene-5__mainchar {
+  position: absolute;
+  bottom: -71vh;
+  left: 12%;
+  width: 20vw;
+  height: 20vh;
+  object-fit: contain;
+  z-index: 1;
+  animation: boatFloat 2s ease-in-out infinite;
+}
+
+.scene-5__text {
+  position: absolute;
+  top: 10vh;
+  left: 3vw;
+  text-align: left;
+  z-index: 7;
+}
+
+.scene-5__poem {
+  font-size: 4.3rem;
+  font-weight: 400;
+  color: #000000;
+  line-height: 1.5;
+  margin: 0;
+}
+
+/* ================== Section 6 ===================*/
+.scene-6 {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.scene-6__content {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.scene-6__background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
+  z-index: 0;
+}
+
+.scene-6__big-crow {
+  position: absolute;
+  bottom: -95vh;
+  left: -21vw;
+  width: 65vw;
+  height: 65vh;
+  object-fit: contain;
+  z-index: 2;
+  animation: crowFlap 3s ease-in-out infinite;
+}
+.scene-6__small-crow {
+  position: absolute;
+  bottom: -89vh;
+  left: 20vw;
+  width: 30vw;
+  height: 30vh;
+  object-fit: contain;
+  z-index: 3;
+  animation: crowFlap 3s ease-in-out infinite 1s;
+}
+
+.scene-6__text {
+  position: absolute;
+  top: 52vh;
+  right: 5vw;
+  width: 491px;
+  transform: translateY(-50%);
+  text-align: left;
+  z-index: 4;
+}
+
+.scene-6__poem {
+  font-size: 4.6rem;
+  font-weight: 400;
+  color: #000000;
+  margin: 0;
+  margin-bottom: 1rem;
+}
+
+.scene-6__poem:last-child {
+  margin-bottom: 0;
+}
+
+/* ================== Section 7 ===================*/
+.scene-7 {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.scene-7__content {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.scene-7__background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
+  z-index: 0;
+}
+
+.scene-7__ground {
+  position: absolute;
+  bottom: -99vh;
+  right: -21px;
+  width: 70vw;
+  height: 60vh;
+  object-fit: cover;
+  z-index: 1;
+}
+
+.scene-7__shadow {
+  position: absolute;
+  bottom: -70vh;
+  left: 43vw;
+  width: 30vw;
+  height: 40vh;
+  object-fit: contain;
+  z-index: 1;
+}
+.scene-7__bush-1 {
+  position: absolute;
+  bottom: -64vh;
+  right: -34vh;
+  width: 50vw;
+  height: 50vh;
+  object-fit: contain;
+  z-index: 3;
+}
+
+.scene-7__bush-2 {
+  position: absolute;
+  bottom: -77vh;
+  right: -7vw;
+  width: 40vw;
+  height: 40vh;
+  object-fit: contain;
+  z-index: 3;
+}
+
+.scene-7__deer {
+  position: absolute;
+  bottom: -54vh;
+  right: 30vw;
+  width: 50vw;
+  height: 50vh;
+  object-fit: contain;
+  z-index: 4;
+  animation: deerWalk 2s ease-in-out infinite;
+}
+
+.scene-7__text {
+  position: absolute;
+  top: 40vh;
+  left: 3vw;
+  transform: translateY(-50%);
+  text-align: left;
+  z-index: 5;
+}
+
+.scene-7__poem {
+  font-size: 4.6rem;
+  font-weight: 400;
+  color: #000000;
+  line-height: 1;
+  margin: 0;
+  margin-bottom: 1rem;
+}
+
+.scene-7__poem:last-child {
+  margin-bottom: 0;
+}
+
+/* ================== Section 8 ===================*/
+.scene-8 {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.scene-8__content {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.scene-8__background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
+  z-index: 0;
+}
+
+.scene-8__mountain-1 {
+  position: absolute;
+  bottom: -119vh;
+  left: -4vw;
+  width: 105vw;
+  height: 100vh;
+  object-fit: cover;
+  z-index: 1;
+  animation: stretchOut 4s ease-out forwards;
+}
+
+.scene-8__mountain-2 {
+  position: absolute;
+  bottom: -95vh;
+  left: 0;
+  width: 100vw;
+  height: 45vh;
+  object-fit: cover;
+  z-index: 2;
+  animation: stretchOut 4s ease-out forwards 0.5s;
+}
+
+.scene-8__mountain-3 {
+  position: absolute;
+  bottom: -110vh;
+  left: 0;
+  width: 100vw;
+  height: 45vh;
+  object-fit: cover;
+  z-index: 3;
+  animation: stretchOut 4s ease-out forwards 1s;
+}
+
+.scene-8__fifth {
+  position: absolute;
+  bottom: -112vh;
+  left: 32%;
+  width: 30vw;
+  height: 40vh;
+  object-fit: contain;
+  z-index: 4;
+  animation: towerStack 2s ease-out forwards 0.2s;
+}
+
+.scene-8__forth {
+  position: absolute;
+  bottom: -105vh;
+  left: 32%;
+
+  width: 30vw;
+  height: 37vh;
+  object-fit: contain;
+  z-index: 5;
+  animation: towerStack 2s ease-out forwards 0.4s;
+}
+.scene-8__third {
+  position: absolute;
+  bottom: -99vh;
+  left: 32%;
+
+  width: 30vw;
+  height: 39vh;
+  object-fit: contain;
+  z-index: 6;
+  animation: towerStack 2s ease-out forwards 0.6s;
+}
+.scene-8__second {
+  position: absolute;
+  bottom: -90vh;
+  left: 32%;
+
+  width: 30vw;
+  height: 43vh;
+  object-fit: contain;
+  z-index: 7;
+  animation: towerStack 2s ease-out forwards 0.8s;
+}
+
+.scene-8__top {
+  position: absolute;
+  bottom: -77vh;
+  left: 29%;
+
+  width: 35vw;
+  height: 80vh;
+  object-fit: contain;
+  z-index: 8;
+  animation: towerStack 2s ease-out forwards 0.5s;
+}
+
+.scene-8__text-left {
+  position: absolute;
+  top: 15vh;
+  left: 2vw;
+  text-align: left;
+  z-index: 9;
+}
+
+.scene-8__text-right {
+  position: absolute;
+  top: 15vh;
+  right: 2vw;
+  text-align: right;
+  z-index: 9;
+}
+
+.scene-8__poem {
+  font-size: 4.6rem;
+  font-weight: 400;
+  color: #000000;
+  line-height: 1;
+  margin: 0;
+  margin-bottom: 1rem;
+}
+
+.scene-8__poem:last-child {
+  margin-bottom: 0;
+}
+
+/* ================== Section 9 ===================*/
+.scene-9 {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.scene-9__content {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.scene-9__background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
+  z-index: 0;
+}
+
+.scene-9__eyes {
+  position: absolute;
+  bottom: -95vh;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 60vw;
+  height: 60vh;
+  object-fit: contain;
+  z-index: 2;
+}
+
+.scene-9__fire-l {
+  position: absolute;
+  bottom: -85vh;
+  left: 18%;
+  width: 30vw;
+  height: 30vh;
+  object-fit: contain;
+  z-index: 3;
+  animation: fireFlicker 2s ease-in-out infinite;
+}
+
+.scene-9__fire-r {
+  position: absolute;
+  bottom: -85vh;
+  right: 18%;
+  width: 30vw;
+  height: 30vh;
+  object-fit: contain;
+  z-index: 3;
+  animation: fireFlicker 2s ease-in-out infinite 0.5s;
+}
+.scene-9__big-thunder {
+  position: absolute;
+  top: 10vh;
+  right: 0vw;
+  width: 10vw;
+  height: 75vh;
+  object-fit: contain;
+  z-index: 1;
+  animation: thunderFlash 2s ease-in-out infinite;
+}
+
+.scene-9__small-thunder {
+  position: absolute;
+  top: 5vh;
+  right: 7vw;
+  width: 10vw;
+  height: 40vh;
+  object-fit: contain;
+  z-index: 1;
+  animation: thunderFlash 2s ease-in-out infinite 0.5s;
+}
+
+.scene-9__thunder-left-1 {
+  position: absolute;
+  top: 3vh;
+  left: 6vw;
+  width: 14vw;
+  height: 50vh;
+  object-fit: contain;
+  z-index: 1;
+  animation: thunderFlash 2s ease-in-out infinite 1s;
+}
+
+.scene-9__thunder-left-2 {
+  position: absolute;
+  top: 6vh;
+  left: 1vw;
+  width: 14vw;
+  height: 75vh;
+  object-fit: contain;
+  z-index: 1;
+  animation: thunderFlash 2s ease-in-out infinite 1.5s;
+}
+.scene-9__text {
+  position: absolute;
+  width: 985px;
+  top: 20vh;
+  left: 50%;
+  width: 985px;
+  transform: translateX(-50%);
+  text-align: center;
+  z-index: 4;
+}
+
+.scene-9__poem {
+  font-weight: 400;
+  color: #000000;
+  line-height: 1;
+  margin: 0;
+  margin-bottom: 1rem;
+}
+
+.scene-9__poem:last-child {
+  margin-bottom: 0;
+}
+
+/* ================== Section 10 ===================*/
+.scene-10 {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.scene-10__content {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.scene-10__background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
+  z-index: 0;
+}
+
+.scene-10__linen {
+  position: absolute;
+  top: 52vh;
+  right: 4vw;
+  transform: translateY(-50%);
+  width: 40vw;
+  height: 40vw;
+  object-fit: contain;
+  z-index: 2;
+}
+
+.scene-10__leaf {
+  position: absolute;
+  top: 40vh;
+  right: 14vw;
+  width: 15vw;
+  height: 20vh;
+  object-fit: contain;
+  z-index: 3;
+  animation: leafSeesaw 3s ease-in-out infinite;
+}
+
+.scene-10__text {
+  width: 781px;
+  position: absolute;
+  top: 50vh;
+  left: 5vw;
+  transform: translateY(-50%);
+  text-align: left;
+  z-index: 4;
+}
+
+.scene-10__poem {
+  font-weight: 400;
+  color: #000000;
+  line-height: 1;
+  margin: 0;
+  margin-bottom: 1rem;
+}
+
+.scene-10__poem:last-child {
+  margin-left: 15px;
+}
+
+/* ================== Section 11 - Final ===================*/
+.scene-11 {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.scene-11__content {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.scene-11__background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
+  z-index: 0;
+}
+
+.scene-11__text {
+  position: absolute;
+  top: 50vh;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  z-index: 1;
+}
+
+.scene-11__fin {
+  font-family: "Knewave", cursive;
+  font-size: 15rem;
+  font-weight: 400;
+  color: #000000;
+  line-height: 1;
+  margin: 0;
+}
+
+/* ================== Section 1 Animations ===================*/
+@keyframes breathing {
+  0%,
+  100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.05);
+  }
+}
+
+/* ================== Section 4 Animations ===================*/
+@keyframes fireFlicker {
+  0%,
+  100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.15);
+  }
+}
+
+@keyframes birdFloat {
+  0%,
+  100% {
+    transform: translateY(0) translateX(0);
+    opacity: 1;
+  }
+  50% {
+    transform: translateY(-55px) translateX(320px);
+    opacity: 0.2;
+  }
+}
+
+@keyframes treeSway {
+  0%,
+  100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.15);
+  }
+}
+
+@keyframes grassWave {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+}
+
+/* ================== Section 5 Animations ===================*/
+@keyframes boatFloat {
+  0%,
+  100% {
+    transform: translateX(0) translateY(0);
+  }
+  50% {
+    transform: translateX(200px) translateY(-10px);
+  }
+}
+
+@keyframes waveFlow {
+  0%,
+  100% {
+    transform: translateX(0);
+  }
+  25% {
+    transform: translateX(-50px);
+  }
+  50% {
+    transform: translateX(0);
+  }
+  75% {
+    transform: translateX(50px);
+  }
+}
+
+/* ================== Section 6 & 7 Animations ===================*/
+@keyframes treeGentleSway {
+  0%,
+  100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.02);
+  }
+}
+
+@keyframes crowFlap {
+  0%,
+  100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.25);
+  }
+}
+
+@keyframes deerWalk {
+  0%,
+  100% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(-25px);
+  }
+}
+
+/* ================== Section 8 Animations ===================*/
+@keyframes towerRise {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-25px);
+  }
+}
+
+@keyframes stretchOut {
+  0% {
+    transform: scaleX(0.8);
+  }
+  100% {
+    transform: scaleX(1);
+  }
+}
+
+@keyframes towerStack {
+  0% {
+    opacity: 0;
+    transform: translateY(150px) scale(0.6);
+  }
+  30% {
+    opacity: 0.3;
+    transform: translateY(100px) scale(0.7);
+  }
+  60% {
+    opacity: 0.7;
+    transform: translateY(50px) scale(0.9);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+/* ================== Section 9 Animations ===================*/
+@keyframes thunderFlash {
+  0%,
+  100% {
+    opacity: 0.3;
+  }
+  50% {
+    opacity: 1;
+    transform: scale(1.2);
+  }
+}
+/* ================== Section 10 Animations ===================*/
+@keyframes leafSeesaw {
+  0%,
+  100% {
+    transform: translateX(-10px) rotate(-5deg) translateY(0);
+  }
+  50% {
+    transform: translateX(10px) rotate(5deg) translateY(-5px);
+  }
+}
+
+/* ================== Additional Animations ===================*/
+@keyframes gentleFloat {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-8px);
+  }
+}
+
+@keyframes slowPulse {
+  0%,
+  100% {
+    opacity: 0.8;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 1;
+    transform: scale(1.02);
+  }
+}
+
+/* ================== Music Control ===================*/
+.music-control {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  z-index: 1000;
+}
+
+.music-toggle {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border: 2px solid #000;
+  background: rgba(255, 255, 255, 0.9);
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 20px;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.music-toggle:hover {
+  background: rgba(255, 255, 255, 1);
+  transform: scale(1.1);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.music-toggle.playing {
+  animation: slowPulse 2s ease-in-out infinite;
+}
+
+.music-toggle.muted .music-icon {
+  opacity: 0.5;
+}
+
+/* ================== Responsive  ===================*/
+
+/* Tablet Landscape (768px - 1199px) */
+@media (max-width: 1199px) and (min-width: 768px) {
+  body {
+    font-size: 3.6rem;
+  }
+
+  .inherdream__title {
+    font-size: 8rem;
+    width: 600px;
+    top: 25vh;
+    left: 3vw;
+  }
+
+  .inherdream__author {
+    font-size: 3.6rem;
+    width: 500px;
+    left: 8vw;
+  }
+
+  .inherdream__head {
+    width: 20vw;
+    left: 57vw;
+    bottom: 13vh;
+  }
+  .scene-6__text {
+    right: -10vw;
+  }
+  .inherdream__blanket {
+    width: 35vw;
+    height: 35vh;
+    left: 67vw;
+    bottom: 0vh;
+  }
+
+  .inherdream__window {
+    width: 25vw;
+    left: 63vw;
+    top: 42vh;
+  }
+
+  .inherdream__bed {
+    left: 48vw;
+  }
+
+  .inherdream__port {
+    right: -20px;
+  }
+
+  .scene-2__moon {
+    width: 40vw;
+    height: 40vw;
+    top: -10vh;
+    left: -8vw;
+  }
+
+  .scene-2__wind {
+    height: 65vh;
+    top: 10vh;
+    left: 18.5vw;
+  }
+
+  .scene-2__text,
+  .scene-3__text {
+    width: 820px;
+    top: 45%;
+    font-size: 2.6rem;
+    margin-top: 25px;
+    right: -15vw;
+  }
+  .scene-7__ground {
+    width: 67vw;
+    height: 45vh;
+    bottom: -87vh;
+  }
+
+  .scene-8__top {
+    bottom: -88vh;
+    left: 28%;
+    width: 38vw;
+  }
+  .scene-9__fire-l {
+    width: 20vw;
+    height: 20vh;
+    left: 22%;
+    bottom: -80vh;
+  }
+  .scene-9__fire-r {
+    width: 20vw;
+    height: 20vh;
+    right: 22%;
+    bottom: -80vh;
+  }
+  .scene-4__text {
+    margin-top: 250px;
+  }
+  .scene-2__poem,
+  .scene-3__poem,
+  .scene-4__poem,
+  .scene-5__poem,
+  .scene-6__poem,
+  .scene-7__poem,
+  .scene-8__poem,
+  .scene-9__poem,
+  .scene-10__poem {
+    font-size: 2.6rem;
+  }
+
+  .scene-11__fin {
+    font-size: 12rem;
+  }
+
+  .music-toggle {
+    width: 45px;
+    height: 45px;
+    font-size: 18px;
+  }
+}
+
+/* Tablet Landscape (768px - 1199px) */
+@media (max-width: 1299px) and (min-width: 1200px) {
+  body {
+    font-size: 3.6rem;
+  }
+
+  .inherdream__title {
+    font-size: 8rem;
+    width: 600px;
+    top: 25vh;
+    left: 3vw;
+  }
+
+  .inherdream__author {
+    font-size: 3.6rem;
+    width: 500px;
+    left: 8vw;
+  }
+
+  .inherdream__head {
+    width: 20vw;
+    left: 57vw;
+    bottom: 13vh;
+  }
+  .inherdream__blanket {
+    width: 35vw;
+    height: 35vh;
+    left: 66vw;
+    bottom: 2vh;
+  }
+
+  .inherdream__window {
+    width: 25vw;
+    left: 63vw;
+    top: 27vh;
+  }
+
+  .inherdream__bed {
+    left: 48vw;
+  }
+
+  .inherdream__port {
+    right: -20px;
+  }
+
+  .scene-2__moon {
+    width: 40vw;
+    height: 40vw;
+    top: -10vh;
+    left: -8vw;
+  }
+
+  .scene-2__wind {
+    height: 65vh;
+    top: 21vh;
+    left: 19vw;
+  }
+
+  .scene-2__text,
+  .scene-3__text {
+    width: 820px;
+    top: 45%;
+    font-size: 3rem;
+    margin-top: 25px;
+  }
+  .scene-7__ground {
+    width: 67vw;
+    height: 45vh;
+    bottom: -87vh;
+  }
+
+  .scene-8__top {
+    bottom: -88vh;
+    left: 28%;
+    width: 38vw;
+  }
+  .scene-9__fire-l {
+    width: 20vw;
+    height: 20vh;
+    left: 22%;
+    bottom: -80vh;
+  }
+  .scene-9__fire-r {
+    width: 20vw;
+    height: 20vh;
+    right: 22%;
+    bottom: -80vh;
+  }
+  .scene-4__text {
+    margin-top: 250px;
+  }
+
+
+  .scene-11__fin {
+    font-size: 12rem;
+  }
+
+  .music-toggle {
+    width: 45px;
+    height: 45px;
+    font-size: 18px;
+  }
+}
+
+@media (min-width: 1400px) {
+  body {
+    font-size: 4.6rem;
+  }
+
+  .inherdream__title {
+    width: 852px;
+    font-size: 12.8rem;
+    font-weight: 400;
+    color: #000000;
+    position: absolute;
+    top: 30vh;
+    left: 2vw;
+    line-height: 1;
+    z-index: 10;
+  }
+
+  .inherdream__author {
+    font-size: 3.6rem;
+    width: 500px;
+    left: 8vw;
+  }
+
+  .inherdream__head {
+    width: 16vw;
+    left: 67vw;
+    bottom: 13vh;
+  }
+  .scene-6__text {
+    top: 52vh;
+    right: 5vw;
+  }
+  .inherdream__blanket {
+    width: 35vw;
+    height: 32vh;
+    left: 70vw;
+    bottom: 4vh;
+  }
+
+  .inherdream__window {
+    width: 25vw;
+    left: 65vw;
+    top: 18vh;
+  }
+
+  .inherdream__bed {
+    left: 55vw;
+  }
+
+  .inherdream__port {
+    right: -20px;
+  }
+
+  .scene-2__moon {
+    top: -14vh;
+    left: -6vw;
+    width: 35vw;
+    height: 35vw;
+  }
+
+  .scene-2__wind {
+    top: 18.5vh;
+    left: 17.5vw;
+    height: 90vh;
+  }
+
+  .scene-2__text {
+    width: 800px;
+    margin-top: 96px;
+    position: absolute;
+    top: 50%;
+    right: 3vw;
+    text-align: center;
+    z-index: 3;
+  }
+  .scene-3__text {
+    width: 800px;
+    position: absolute;
+    top: 5vh;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    z-index: 4;
+  }
+  .scene-7__ground {
+    width: 67vw;
+    height: 45vh;
+    bottom: -87vh;
+  }
+
+  .scene-8__top {
+    bottom: -77vh;
+    left: 29%;
+    width: 35vw;
+  }
+  .scene-9__fire-l {
+    width: 20vw;
+    height: 20vh;
+    left: 22%;
+    bottom: -80vh;
+  }
+  .scene-9__fire-r {
+    width: 20vw;
+    height: 20vh;
+    right: 22%;
+    bottom: -80vh;
+  }
+  .scene-4__text {
+    margin-top: 250px;
+  }
+
+  .scene-5__poem,
+  .scene-6__poem,
+  .scene-7__poem,
+  .scene-8__poem,
+  .scene-9__poem,
+  .scene-10__poem {
+    font-size: 4.6rem;
+  }
+
+  .scene-11__fin {
+    font-size: 12rem;
+  }
+
+  .music-toggle {
+    width: 45px;
+    height: 45px;
+    font-size: 18px;
+  }
+}
